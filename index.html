@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>專業企業網站首頁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* ===== 基本設定 ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ===== 導覽列 ===== */
+        header {
+            background: #0b2c4d;
+            color: #fff;
+            padding: 16px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 30px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ===== Hero 區塊 ===== */
+        .hero {
+            background: linear-gradient(120deg, #0b2c4d, #174f86);
+            color: #fff;
+            padding: 100px 60px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .hero button {
+            padding: 14px 36px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background: #ffffff;
+            color: #0b2c4d;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .hero button:hover {
+            background: #e6e6e6;
+        }
+
+        /* ===== 內容區塊 ===== */
+        .section {
+            padding: 80px 60px;
+            background: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h3 {
+            font-size: 32px;
+            color: #0b2c4d;
+        }
+
+        .section-title p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* ===== 服務卡片 ===== */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #f5f7fa;
+            padding: 30px;
+            border-radius: 6px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .service-card h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #0b2c4d;
+        }
+
+        .service-card p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* ===== 關於我們 ===== */
+        .about {
+            background: #f5f7fa;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 16px;
+            color: #444;
+        }
+
+        /* ===== 頁尾 ===== */
+        footer {
+            background: #0b2c4d;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        /* ===== RWD ===== */
+        @media (max-width: 768px) {
+            header {
+                padding: 16px 30px;
+            }
+
+            .hero {
+                padding: 80px 30px;
+            }
+
+            .section {
+                padding: 60px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 導覽列 -->
+<header>
+    <h1>CompanyName</h1>
+    <nav>
+        <a href="#">首頁</a>
+        <a href="#">服務</a>
+        <a href="#">關於我們</a>
+        <a href="#">聯絡</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <h2>打造專業、可信賴的數位體驗</h2>
+    <p>
+        我們專注於高品質網站設計與品牌形象，協助企業在數位世界中脫穎而出。
+    </p>
+    <button>了解更多</button>
+</section>
+
+<!-- 服務 -->
+<section class="section">
+    <div class="section-title">
+        <h3>我們的服務</h3>
+        <p>專業、效率、值得信賴</p>
+    </div>
+
+    <div class="services">
+        <div class="service-card">
+            <h4>網站設計</h4>
+            <p>量身打造符合品牌形象的現代化網站，兼具美感與實用性。</p>
+        </div>
+
+        <div class="service-card">
+            <h4>UI / UX 規劃</h4>
+            <p>以使用者為核心，提升操作體驗與轉換率。</p>
+        </div>
+
+        <div class="service-card">
+            <h4>品牌視覺</h4>
+            <p>建立一致且具辨識度的企業視覺形象。</p>
+        </div>
+    </div>
+</section>
+
+<!-- 關於我們 -->
+<section class="section about">
+    <div class="section-title">
+        <h3>關於我們</h3>
+        <p>專注品質，成就價值</p>
+    </div>
+
+    <p>
+        我們是一支充滿熱情的設計團隊，致力於為企業提供高水準的網站設計與數位解決方案，
+        以專業態度與細節，打造真正能為客戶帶來價值的產品。
+    </p>
+</section>
+
+<!-- 頁尾 -->
+<footer>
+    © 2025 CompanyName. All Rights Reserved.
+</footer>
+
+</body>
+</html>
